@@ -34,17 +34,36 @@ export const NavBar = styled.div `
   line-height: 68px;
 `
 
+export const SearchWrapper = styled.div `
+  position: relative;
+  display: inline-block;
+  margin-left: 20px;
+  .iconfont {
+    position: absolute;
+    right: 5px;
+    top: 52%;
+    transform: translateY(-50%);
+    text-align: center;
+    display: inline-block;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    background: #ddd;
+    color: #bbb;
+    font-size: 20px;
+  }
+`
+
 export const Search = styled.input `
   border: none;
   height: 36px;
+  width: 140px;
   background-color: #f1f1f1;
   border-radius: 18px;
-  width: 140px;
   padding: 0 40px 0 20px;
-  margin-left: 20px;
   outline: none;
   font-size: 14px;
-  &::placeholder{
+  &::placeholder {
     color: #999;
   }
 `
@@ -81,7 +100,7 @@ export const Botton = styled.div `
   line-height: 36px;
   border-radius: 20px;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 25px;
   margin: 0 5px 0 15px;
   color: ${activeColor};
   cursor: pointer;
@@ -92,4 +111,6 @@ export const Botton = styled.div `
     background-color: ${activeColor};
     color: #fff;
   }
+  .iconfont {
+    font-size: 17px;
 `
